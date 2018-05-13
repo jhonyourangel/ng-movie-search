@@ -1,0 +1,14 @@
+
+<div class="container">
+    <mat-card class="exaple-card" *ngFor="let movie of movieList">
+      <mat-card-header>
+        <mat-card-title>{{ movie.movieName }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-lg-image src="{{ movie.imageLink }}">
+  
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
